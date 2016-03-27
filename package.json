@@ -1,0 +1,27 @@
+{
+  "name": "shopify-settings-generator",
+  "version": "0.0.1",
+  "description": "",
+  "preferGlobal": true,
+  "bin": {
+    "shopset": "./bin/shopset.js"
+  },
+  "main": "./lib/shopset.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stewartknapman/shopify-settings-generator.git"
+  },
+  "author": "@stewartknapman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stewartknapman/shopify-settings-generator/issues"
+  },
+  "homepage": "https://github.com/stewartknapman/shopify-settings-generator",
+  "dependencies": {
+    "liquid.js": "git+https://github.com/stewartknapman/liquid.js.git#new_build",
+    "minimist": "^1.2.0"
+  }
+}
