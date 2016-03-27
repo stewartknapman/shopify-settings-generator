@@ -6,9 +6,8 @@
   "bin": {
     "shopset": "./bin/shopset.js"
   },
-  "main": "./lib/shopset.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "shopset ./test/input/settings_schema.json.liquid -o ./test/output/settings_schema.json"
   },
   "repository": {
     "type": "git",
