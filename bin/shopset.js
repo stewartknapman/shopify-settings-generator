@@ -11,7 +11,7 @@ var err = function (message) {
 
 if (argv._[0]) {
   var output = argv.o || argv.output;
-  var data = new SettingsGen(argv._[0]);
+  var data = new SettingsGen(argv._[0]).render();
   
   if (output) {
     fs.writeFileSync(output, data);
