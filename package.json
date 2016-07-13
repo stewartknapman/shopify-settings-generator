@@ -7,7 +7,8 @@
     "shopset": "./bin/shopset.js"
   },
   "scripts": {
-    "test": "shopset ./test/input/settings_schema.json.liquid -o ./test/output/settings_schema.json"
+    "test": "mocha",
+    "output": "shopset ./test/input/settings_schema.json.liquid -o ./test/output/settings_schema.json"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "dependencies": {
     "liquid.js": "git+https://github.com/stewartknapman/liquid.js.git#new_build",
     "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
   }
 }
